@@ -1,16 +1,77 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# B&R Kienyeji Foods
 
-Currently, two official plugins are available:
+A responsive restaurant website for B&R Kienyeji Foods, an East African restaurant located along Dunga Road, Nairobi, Kenya.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About the Project
 
-## React Compiler
+The website provides visitors with information about the restaurant, its services, dining options, location, contact details and opening hours.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Responsive design for desktop, tablet and mobile.
+- Restaurant introduction and information.
+- Services and dining options.
+- Menu section.
+- Phone contact.
+- WhatsApp contact.
+- Restaurant location.
+- Opening hours.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React
+- JavaScript
+- Vite
+- CSS
+- Git and GitHub
+
+## Restaurant Information
+
+**Business:** B&R Kienyeji Foods
+
+**Location:** Dunga Road, Nairobi, Kenya
+
+**Phone:** 0703 762387
+
+**WhatsApp:** +254 703 762387
+
+## Opening Hours
+
+| Day | Hours |
+|---|---|
+| Monday – Friday | 6:30 AM – 8:00 PM |
+| Saturday | 8:00 AM – 4:00 PM |
+| Sunday | Closed |
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+## Project Status
+
+Website development and deployment preparation.
