@@ -1,20 +1,9 @@
 
 /* ==========================================
    B&R KIENYEJI FOODS
-   PROFESSIONAL RESPONSIVE WEBSITE STYLESHEET
+   PROFESSIONAL RESPONSIVE STYLESHEET
 ========================================== */
 
-/* ==========================================
-   COLOUR SYSTEM
-========================================== */
-
-:root {
-  --primary-brown: #75452E;
-  --dark-brown: #3B2118;
-  --black: #000000;
-  --white: #FFFFFF;
-  --font-main: "Bahnschrift Condensed", "Arial Narrow", sans-serif;
-}
 
 /* ==========================================
    GLOBAL RESET
@@ -85,6 +74,7 @@ section {
   position: relative;
   scroll-margin-top: 90px;
 }
+
 
 /* ==========================================
    HERO SECTION
@@ -174,6 +164,7 @@ section {
   transform: translateY(-2px);
 }
 
+
 /* ==========================================
    ABOUT SECTION
 ========================================== */
@@ -261,6 +252,7 @@ section {
   background: #573122;
 }
 
+
 /* ==========================================
    SERVICES SECTION
 ========================================== */
@@ -329,6 +321,7 @@ section {
   text-align: center;
   margin-top: 35px;
 }
+
 
 /* ==========================================
    MENU SECTION
@@ -407,6 +400,7 @@ section {
   transform: scale(1.05);
 }
 
+
 /* ==========================================
    CONTACT SECTION
 ========================================== */
@@ -439,6 +433,7 @@ section {
   font-size: 17px;
   line-height: 1.7;
 }
+
 
 /* CONTACT CARDS */
 
@@ -475,6 +470,7 @@ section {
   overflow-wrap: anywhere;
 }
 
+
 /* PHONE CONTACT CARD */
 
 .truecaller-card {
@@ -508,6 +504,7 @@ section {
 .truecaller-card a:hover {
   text-decoration: underline;
 }
+
 
 /* WHATSAPP CONTACT CARD */
 
@@ -548,6 +545,7 @@ section {
   text-decoration: underline;
 }
 
+
 /* OPENING HOURS */
 
 .opening-hours {
@@ -579,6 +577,7 @@ section {
   text-align: right;
 }
 
+
 /* CONTACT BUTTON */
 
 .contact-action {
@@ -604,6 +603,7 @@ section {
   background: #573122;
 }
 
+
 /* ==========================================
    FOOTER
 ========================================== */
@@ -612,79 +612,44 @@ section {
   width: 100%;
   background: var(--dark-brown);
   color: var(--white);
-  padding: 50px 6% 0;
+  padding: 35px 6% 0;
 }
 
 .footer-container {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr;
-  gap: 35px;
-  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
-.footer-brand,
-.footer-links,
-.footer-contact {
-  min-width: 0;
+.footer-contact h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
 }
 
-.footer-logo {
+.footer-contact p,
+.footer-contact a {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer-contact a {
   display: inline-block;
   color: var(--white);
   text-decoration: none;
-  font-size: 26px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 14px;
+  margin-top: 5px;
 }
 
-.footer-logo span {
-  display: block;
-  font-size: 11px;
-  letter-spacing: 2px;
-}
-
-.footer-brand p {
-  font-size: 14px;
-  line-height: 1.8;
-  max-width: 260px;
-}
-
-.footer-links h3,
-.footer-contact h3 {
-  font-size: 19px;
-  margin-bottom: 17px;
-}
-
-.footer-links a,
-.footer-contact a {
-  display: block;
-  width: fit-content;
-  max-width: 100%;
-  color: var(--white);
-  text-decoration: none;
-  font-size: 14px;
-  margin-bottom: 11px;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover,
 .footer-contact a:hover {
   color: #E7C6B2;
 }
 
-.footer-contact p {
-  font-size: 14px;
-  line-height: 1.8;
-  margin-bottom: 8px;
-}
-
 .footer-bottom {
   width: 100%;
-  padding: 20px 10px;
+  padding: 18px 10px;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -693,6 +658,7 @@ section {
   font-size: 13px;
   line-height: 1.6;
 }
+
 
 /* ==========================================
    LARGE TABLETS AND SMALL LAPTOPS
@@ -703,10 +669,7 @@ section {
     min-height: 540px;
   }
 
-  .services-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
+  .services-grid,
   .menu-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -714,12 +677,8 @@ section {
   .contact-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
-  .footer-container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 25px;
-  }
 }
+
 
 /* ==========================================
    TABLET AND MOBILE RESPONSIVENESS
@@ -806,7 +765,8 @@ section {
     font-size: 15px;
   }
 
-  .services-grid {
+  .services-grid,
+  .menu-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 13px;
   }
@@ -823,11 +783,6 @@ section {
 
   .service-card p {
     font-size: 14px;
-  }
-
-  .menu-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 13px;
   }
 
   .menu-card {
@@ -877,23 +832,14 @@ section {
   /* FOOTER TABLET */
 
   .footer {
-    padding: 40px 5% 0;
+    padding: 30px 5% 0;
   }
 
-  .footer-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
-    padding-bottom: 30px;
-  }
-
-  .footer-brand {
-    grid-column: 1 / -1;
-  }
-
-  .footer-brand p {
-    max-width: 350px;
+  .footer-contact h3 {
+    font-size: 18px;
   }
 }
+
 
 /* ==========================================
    SMALL MOBILE SCREENS
@@ -967,9 +913,11 @@ section {
     font-size: 14px;
   }
 
-  .services-grid {
+  .services-grid,
+  .menu-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
-    gap: 11px;
+    gap: 13px;
   }
 
   .service-card {
@@ -985,18 +933,8 @@ section {
     font-size: 14px;
   }
 
-  .menu-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
   .menu-card {
     height: 210px;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 11px;
   }
 
   .contact-card {
@@ -1038,48 +976,27 @@ section {
   /* FOOTER MOBILE */
 
   .footer {
-    padding: 35px 6% 0;
+    padding: 28px 5% 0;
   }
 
-  .footer-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 25px 18px;
-    padding-bottom: 25px;
-  }
-
-  .footer-brand {
-    grid-column: 1 / -1;
-  }
-
-  .footer-logo {
-    font-size: 23px;
-  }
-
-  .footer-brand p,
-  .footer-contact p {
-    font-size: 13px;
-  }
-
-  .footer-links h3,
   .footer-contact h3 {
     font-size: 17px;
-    margin-bottom: 12px;
   }
 
-  .footer-links a,
+  .footer-contact p,
   .footer-contact a {
     font-size: 13px;
-    margin-bottom: 10px;
   }
 
   .footer-bottom {
-    padding: 16px 5px;
+    padding: 15px 5px;
   }
 
   .footer-bottom p {
     font-size: 12px;
   }
 }
+
 
 /* ==========================================
    VERY SMALL PHONES
@@ -1113,15 +1030,11 @@ section {
     font-size: 12px;
   }
 
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
-
-  .footer-brand {
-    grid-column: auto;
+  .footer-contact h3 {
+    font-size: 16px;
   }
 }
+
 
 /* ==========================================
    SECTION BACKGROUND PHOTOGRAPHS
@@ -1177,6 +1090,7 @@ section {
     url("/images/contact.jpg");
 }
 
+
 /* ==========================================
    SECTION SPACING
 ========================================== */
@@ -1188,6 +1102,7 @@ section {
 .contact-section {
   margin-bottom: 14px;
 }
+
 
 /* ==========================================
    ACCESSIBILITY

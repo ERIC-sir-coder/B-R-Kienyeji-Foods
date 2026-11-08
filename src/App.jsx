@@ -16,7 +16,10 @@ function App() {
       <Navbar />
 
       <main>
-        {/* HERO SECTION */}
+        {/* ==========================================
+            HERO SECTION
+        ========================================== */}
+
         <section className="hero" id="home">
           <div className="hero-content">
             <p className="hero-tagline">
@@ -44,11 +47,18 @@ function App() {
           </div>
         </section>
 
-        {/* ABOUT US SECTION */}
+
+        {/* ==========================================
+            ABOUT US SECTION
+        ========================================== */}
+
         <section className="about-section" id="about">
           <div className="about-container">
             <div className="about-heading">
-              <p className="section-tagline">GET TO KNOW US</p>
+              <p className="section-tagline">
+                GET TO KNOW US
+              </p>
+
               <h2>About B&R Kienyeji Foods</h2>
             </div>
 
@@ -80,18 +90,28 @@ function App() {
                 </div>
               </div>
 
-              <a href="tel:0703762387" className="about-button">
+              <a
+                href="tel:0703762387"
+                className="about-button"
+              >
                 Contact Us
               </a>
             </div>
           </div>
         </section>
 
-        {/* SERVICES SECTION */}
+
+        {/* ==========================================
+            SERVICES SECTION
+        ========================================== */}
+
         <section className="services-section" id="services">
           <div className="services-container">
             <div className="services-heading">
-              <p className="section-tagline">WHAT WE OFFER</p>
+              <p className="section-tagline">
+                WHAT WE OFFER
+              </p>
+
               <h2>Our Services</h2>
 
               <p>
@@ -102,6 +122,7 @@ function App() {
             <div className="services-grid">
               <div className="service-card">
                 <h3>Dine-In</h3>
+
                 <p>
                   Enjoy your meal at our restaurant in a welcoming
                   dining environment.
@@ -110,6 +131,7 @@ function App() {
 
               <div className="service-card">
                 <h3>Takeaway</h3>
+
                 <p>
                   Prefer to enjoy your meal elsewhere?
                   Takeaway service is available.
@@ -118,6 +140,7 @@ function App() {
 
               <div className="service-card">
                 <h3>Lunch</h3>
+
                 <p>
                   Visit us for your lunch dining experience.
                 </p>
@@ -125,6 +148,7 @@ function App() {
 
               <div className="service-card">
                 <h3>Dinner</h3>
+
                 <p>
                   Enjoy an evening dining experience with us.
                 </p>
@@ -132,6 +156,7 @@ function App() {
 
               <div className="service-card">
                 <h3>Solo Dining</h3>
+
                 <p>
                   A dining option for customers visiting on their own.
                 </p>
@@ -139,6 +164,7 @@ function App() {
 
               <div className="service-card">
                 <h3>Quick Bites</h3>
+
                 <p>
                   Quick-bite and small-plate offerings are available.
                 </p>
@@ -147,7 +173,11 @@ function App() {
           </div>
         </section>
 
-        {/* MENU SECTION */}
+
+        {/* ==========================================
+            MENU SECTION
+        ========================================== */}
+
         <section className="menu-section" id="menu">
           <div className="menu-container">
             <div className="menu-heading">
@@ -163,6 +193,7 @@ function App() {
             </div>
 
             {/* FOOD IMAGE GALLERY */}
+
             <div className="menu-grid">
               {dishes.map((dish, index) => (
                 <div className="menu-card" key={dish.image}>
@@ -179,11 +210,18 @@ function App() {
           </div>
         </section>
 
-        {/* CONTACT SECTION */}
+
+        {/* ==========================================
+            CONTACT SECTION
+        ========================================== */}
+
         <section className="contact-section" id="contact">
           <div className="contact-container">
             <div className="contact-heading">
-              <p className="section-tagline">GET IN TOUCH</p>
+              <p className="section-tagline">
+                GET IN TOUCH
+              </p>
+
               <h2>Contact Us</h2>
 
               <p>
@@ -195,6 +233,7 @@ function App() {
             <div className="contact-grid">
 
               {/* PHONE CARD */}
+
               <div className="contact-card truecaller-card">
                 <div className="truecaller-logo">
                   <svg
@@ -249,7 +288,9 @@ function App() {
                 </a>
               </div>
 
+
               {/* WHATSAPP CARD */}
+
               <div className="contact-card whatsapp-card">
                 <div className="whatsapp-logo">
                   <img
@@ -274,16 +315,22 @@ function App() {
                 </a>
               </div>
 
+
               {/* LOCATION CARD */}
+
               <div className="contact-card">
                 <h3>Visit Us</h3>
+
                 <p>Find us at:</p>
+
                 <p>Dunga Road, Nairobi</p>
               </div>
 
             </div>
 
-            {/* OPENING HOURS - CONTACT SECTION */}
+
+            {/* OPENING HOURS */}
+
             <div className="opening-hours">
               <h3>Opening Hours</h3>
 
@@ -306,35 +353,13 @@ function App() {
         </section>
       </main>
 
-      {/* FOOTER */}
+
+      {/* ==========================================
+          FOOTER
+      ========================================== */}
+
       <footer className="footer">
         <div className="footer-container">
-
-          {/* BRAND */}
-          <div className="footer-brand">
-            <a href="#home" className="footer-logo">
-              B&R
-              <span>KIENYEJI FOODS</span>
-            </a>
-
-            <p>
-              Your East African dining destination
-              along Dunga Road, Nairobi.
-            </p>
-          </div>
-
-          {/* QUICK LINKS */}
-          <div className="footer-links">
-            <h3>Quick Links</h3>
-
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#menu">Our Menu</a>
-            <a href="#contact">Contact</a>
-          </div>
-
-          {/* CONTACT INFORMATION */}
           <div className="footer-contact">
             <h3>Contact Information</h3>
 
@@ -344,10 +369,10 @@ function App() {
               0703 762387
             </a>
           </div>
-
         </div>
 
         {/* COPYRIGHT */}
+
         <div className="footer-bottom">
           <p>
             © {new Date().getFullYear()} B&R Kienyeji Foods.
