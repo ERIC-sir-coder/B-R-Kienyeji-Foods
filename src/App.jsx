@@ -283,7 +283,7 @@ function App() {
 
             </div>
 
-            {/* OPENING HOURS */}
+            {/* OPENING HOURS - CONTACT SECTION */}
             <div className="opening-hours">
               <h3>Opening Hours</h3>
 
@@ -310,6 +310,7 @@ function App() {
       <footer className="footer">
         <div className="footer-container">
 
+          {/* BRAND */}
           <div className="footer-brand">
             <a href="#home" className="footer-logo">
               B&R
@@ -322,6 +323,7 @@ function App() {
             </p>
           </div>
 
+          {/* QUICK LINKS */}
           <div className="footer-links">
             <h3>Quick Links</h3>
 
@@ -332,6 +334,7 @@ function App() {
             <a href="#contact">Contact</a>
           </div>
 
+          {/* CONTACT INFORMATION */}
           <div className="footer-contact">
             <h3>Contact Information</h3>
 
@@ -340,26 +343,11 @@ function App() {
             <a href="tel:0703762387">
               0703 762387
             </a>
-
-            <a
-              href="https://wa.me/254703762387"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WhatsApp Us
-            </a>
-          </div>
-
-          <div className="footer-hours">
-            <h3>Opening Hours</h3>
-
-            <p>Monday – Friday: 6:30 AM – 8:00 PM</p>
-            <p>Saturday: 8:00 AM – 4:00 PM</p>
-            <p>Sunday: Closed</p>
           </div>
 
         </div>
 
+        {/* COPYRIGHT */}
         <div className="footer-bottom">
           <p>
             © {new Date().getFullYear()} B&R Kienyeji Foods.

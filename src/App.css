@@ -1,10 +1,12 @@
 
 /* ==========================================
    B&R KIENYEJI FOODS
-   RESPONSIVE WEBSITE STYLESHEET
+   PROFESSIONAL RESPONSIVE WEBSITE STYLESHEET
 ========================================== */
 
-/* COLOUR SYSTEM */
+/* ==========================================
+   COLOUR SYSTEM
+========================================== */
 
 :root {
   --primary-brown: #75452E;
@@ -39,6 +41,7 @@ body {
   color: var(--white);
   font-family: var(--font-main);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 #root {
@@ -73,6 +76,10 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+img {
+  max-width: 100%;
+}
+
 section {
   width: 100%;
   position: relative;
@@ -84,6 +91,7 @@ section {
 ========================================== */
 
 .hero {
+  width: 100%;
   min-height: 600px;
   display: flex;
   align-items: center;
@@ -145,7 +153,7 @@ section {
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
-  transition: 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .hero-call {
@@ -163,6 +171,7 @@ section {
 .hero-explore:hover {
   background: var(--dark-brown);
   color: var(--white);
+  transform: translateY(-2px);
 }
 
 /* ==========================================
@@ -218,6 +227,7 @@ section {
 }
 
 .about-detail {
+  min-width: 0;
   padding: 23px 17px;
   background: rgba(59, 33, 24, 0.75);
   border-radius: 9px;
@@ -244,7 +254,7 @@ section {
   color: var(--white);
   text-decoration: none;
   font-size: 15px;
-  transition: 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .about-button:hover {
@@ -354,16 +364,12 @@ section {
   line-height: 1.7;
 }
 
-/* MENU IMAGE GRID */
-
 .menu-grid {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
 }
-
-/* MENU IMAGE CARD */
 
 .menu-card {
   width: 100%;
@@ -381,8 +387,6 @@ section {
   transform: translateY(-4px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
 }
-
-/* FOOD IMAGE */
 
 .menu-image {
   width: 100%;
@@ -440,7 +444,7 @@ section {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 17px;
 }
 
@@ -471,7 +475,7 @@ section {
   overflow-wrap: anywhere;
 }
 
-/* TRUECALLER CONTACT CARD */
+/* PHONE CONTACT CARD */
 
 .truecaller-card {
   display: flex;
@@ -593,7 +597,7 @@ section {
   color: var(--white);
   text-decoration: none;
   font-size: 15px;
-  transition: 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .contact-button:hover {
@@ -608,17 +612,23 @@ section {
   width: 100%;
   background: var(--dark-brown);
   color: var(--white);
-  padding: 55px 6% 0;
+  padding: 50px 6% 0;
 }
 
 .footer-container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 30px;
-  padding-bottom: 40px;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 35px;
+  padding-bottom: 35px;
+}
+
+.footer-brand,
+.footer-links,
+.footer-contact {
+  min-width: 0;
 }
 
 .footer-logo {
@@ -644,8 +654,7 @@ section {
 }
 
 .footer-links h3,
-.footer-contact h3,
-.footer-hours h3 {
+.footer-contact h3 {
   font-size: 19px;
   margin-bottom: 17px;
 }
@@ -654,11 +663,12 @@ section {
 .footer-contact a {
   display: block;
   width: fit-content;
+  max-width: 100%;
   color: var(--white);
   text-decoration: none;
   font-size: 14px;
   margin-bottom: 11px;
-  transition: 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .footer-links a:hover,
@@ -666,8 +676,7 @@ section {
   color: #E7C6B2;
 }
 
-.footer-contact p,
-.footer-hours p {
+.footer-contact p {
   font-size: 14px;
   line-height: 1.8;
   margin-bottom: 8px;
@@ -677,6 +686,7 @@ section {
   width: 100%;
   padding: 20px 10px;
   text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .footer-bottom p {
@@ -685,10 +695,14 @@ section {
 }
 
 /* ==========================================
-   TABLET RESPONSIVENESS
+   LARGE TABLETS AND SMALL LAPTOPS
 ========================================== */
 
 @media (max-width: 1024px) {
+  .hero {
+    min-height: 540px;
+  }
+
   .services-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -698,16 +712,17 @@ section {
   }
 
   .contact-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .footer-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
   }
 }
 
 /* ==========================================
-   MOBILE LAYOUT
+   TABLET AND MOBILE RESPONSIVENESS
 ========================================== */
 
 @media (max-width: 768px) {
@@ -859,14 +874,24 @@ section {
     font-size: 14px;
   }
 
+  /* FOOTER TABLET */
+
   .footer {
     padding: 40px 5% 0;
   }
 
   .footer-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 25px;
+    gap: 28px;
     padding-bottom: 30px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand p {
+    max-width: 350px;
   }
 }
 
@@ -1010,14 +1035,20 @@ section {
     width: 100%;
   }
 
+  /* FOOTER MOBILE */
+
   .footer {
-    padding: 35px 5% 0;
+    padding: 35px 6% 0;
   }
 
   .footer-container {
-    grid-template-columns: 1fr;
-    gap: 22px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 18px;
     padding-bottom: 25px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
   }
 
   .footer-logo {
@@ -1025,22 +1056,20 @@ section {
   }
 
   .footer-brand p,
-  .footer-contact p,
-  .footer-hours p {
+  .footer-contact p {
     font-size: 13px;
   }
 
   .footer-links h3,
-  .footer-contact h3,
-  .footer-hours h3 {
-    font-size: 18px;
+  .footer-contact h3 {
+    font-size: 17px;
     margin-bottom: 12px;
   }
 
   .footer-links a,
   .footer-contact a {
     font-size: 13px;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
   }
 
   .footer-bottom {
@@ -1082,6 +1111,15 @@ section {
 
   .hours-row {
     font-size: 12px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
   }
 }
 
@@ -1165,5 +1203,6 @@ section {
   *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
