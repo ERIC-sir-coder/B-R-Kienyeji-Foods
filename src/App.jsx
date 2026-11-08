@@ -2,6 +2,14 @@
 import Navbar from './components/Navbar'
 import './App.css'
 
+const dishes = [
+  { image: '/images/dish1.jpg' },
+  { image: '/images/dish2.jpg' },
+  { image: '/images/dish3.jpg' },
+  { image: '/images/dish4.jpg' },
+  { image: '/images/dish5.jpg' },
+]
+
 function App() {
   return (
     <>
@@ -85,6 +93,7 @@ function App() {
             <div className="services-heading">
               <p className="section-tagline">WHAT WE OFFER</p>
               <h2>Our Services</h2>
+
               <p>
                 Enjoy convenient dining options at B&R Kienyeji Foods.
               </p>
@@ -142,25 +151,30 @@ function App() {
         <section className="menu-section" id="menu">
           <div className="menu-container">
             <div className="menu-heading">
-              <p className="section-tagline">EXPLORE OUR FOOD</p>
+              <p className="section-tagline">
+                TIME TO EXPLORE OUR FOOD
+              </p>
+
               <h2>Our Menu</h2>
+
               <p>
                 Discover what B&R Kienyeji Foods has to offer.
               </p>
             </div>
 
-            <div className="menu-coming-soon">
-              <div className="menu-icon">
-                <span>MENU</span>
-              </div>
-
-              <h3>Our Menu Is Coming Soon</h3>
-
-              <p>
-                We are preparing our menu details.
-                Check back soon to explore our food selection
-                and prices.
-              </p>
+            {/* FOOD IMAGE GALLERY */}
+            <div className="menu-grid">
+              {dishes.map((dish, index) => (
+                <div className="menu-card" key={dish.image}>
+                  <div className="menu-image">
+                    <img
+                      src={dish.image}
+                      alt={`B&R Kienyeji Foods meal ${index + 1}`}
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -171,6 +185,7 @@ function App() {
             <div className="contact-heading">
               <p className="section-tagline">GET IN TOUCH</p>
               <h2>Contact Us</h2>
+
               <p>
                 We welcome you to B&R Kienyeji Foods.
                 Get in touch or visit our restaurant.
